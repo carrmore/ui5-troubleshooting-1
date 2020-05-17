@@ -2,9 +2,9 @@
 
 <script id="sap-ui-bootstrap" 
      type="text/javascript"
-     src="resources/sap-ui-core.js"
+     src="https://ui5.sap.com/resources/sap-ui-core.js"
      data-sap-ui-theme="sap_belize"
-     data-sap-ui-libs="sap.m"
+     data-sap-ui-libs="sap.m,sap.ndc"
      data-sap-ui-compatVersion="edge"> 
 </script>
 
@@ -13,7 +13,7 @@
 	try{
 		sap.ui.getCore().attachInit(function(){
 			var sVersion = sap.ui.getCore().getConfiguration().getVersion().toString();
-			if(sVersion === "1.71.15"){
+			if(sVersion == "1.71.15"){
 				alert("Versão correta carregada");
 			}else{
 				alert("Versão incorreta carregada");
